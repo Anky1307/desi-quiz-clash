@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#10192b" />
+  <meta name="description" content="Desi Quiz Clash — a bilingual Indian trivia party game for 2–8 friends." />
+  <title>Desi Quiz Clash — Game Night, Desi Style</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Desi Quiz Clash home">
+      <span class="brand-mark"><span>DQ</span><i>✦</i></span>
+      <span class="brand-name">DESI <b>QUIZ CLASH</b></span>
+    </a>
+    <div class="topbar-right"><span class="live-dot"></span><span>REAL-TIME PARTY MODE</span><span class="topbar-divider"></span><span class="players-note">2–8 players</span></div>
+  </header>
+  <main id="app" class="app-shell" aria-live="polite">
+    <div class="loading-state"><div class="loader"></div><p>Getting the quiz room ready…</p></div>
+  </main>
+  <div id="toast-region" class="toast-region" aria-live="assertive" aria-atomic="true"></div>
+  <footer class="site-footer"><span>Made for friends, chai breaks & friendly rivalries.</span><span>भारत • Bollywood • Cricket • Science</span></footer>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
+</body>
+</html>
